@@ -19,7 +19,7 @@ jobs:
       - name: Build and push orchestrator
         uses: docker/build-push-action@v5
         with:
-          context: ./mobile-magic
+          context: .
           file: ./mobile-magic/docker/Dockerfile.k8s-orchestrator
           push: true
           tags: 100xdevs/antidevs-k8s-orchestrator:${{ github.sha }}

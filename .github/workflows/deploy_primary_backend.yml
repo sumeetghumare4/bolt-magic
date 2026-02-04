@@ -19,7 +19,7 @@ jobs:
       - name: Build and push primary backend
         uses: docker/build-push-action@v5
         with:
-          context: ./mobile-magic
+          context: .
           file: ./mobile-magic/docker/Dockerfile.primary-backend
           push: true
           tags: 100xdevs/antidevs-primary-backend:${{ github.sha }}
